@@ -1,14 +1,14 @@
-Data Analysis Report: Credit Card Default Dataset
-1. Introduction
+# Data Analysis Report: Credit Card Default Dataset
+## 1. Introduction
 
 The Default of Credit Card Clients dataset contains demographic, financial, and payment-related attributes used to predict whether a customer will default on their next credit payment. As with many large administrative datasets, it contains challenges such as skewed distributions, inconsistent scaling between variables, and the need for structured preprocessing steps. Proper data preparation was therefore essential to improve data quality, ensure consistency across features, and support reliable exploratory analysis and predictive modeling.
 
-2. Methods and Materials
+## 2. Methods and Materials
 
 Dataset: Default of Credit Card Clients.csv (UCI Machine Learning Repository)
 Tools Used: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Statsmodels)
 
-Data Preparation Steps
+### Data Preparation Steps
 
 Loading and Inspection – The dataset was imported and examined for shape, data types, and column descriptions. An initial preview of the raw file was generated to confirm correct formatting.
 
@@ -32,7 +32,7 @@ Scaling Preparation – Continuous features show large differences in magnitude 
 
 Correlation Exploration – Heatmaps and pairwise relationships were used to examine how payment history, bill amounts, and demographics relate to default probability.
 
-3. Results
+## 3. Results
 Data Characteristics
 
 Dataset Size: 30,000 records × 25 features
@@ -61,7 +61,7 @@ Correlations show that PAY_0 (last month's repayment status) is most strongly as
 
 BILL_AMT features are moderately correlated with each other across months.
 
-4. Discussion
+## 4. Discussion
 
 The dataset is clean and structurally consistent, but presents several challenges typical of financial data. Most variables exhibit extreme skewness, particularly the bill and payment amounts. These skewed distributions may negatively affect modeling and indicate the potential usefulness of transformations or robust scaling methods during preprocessing.
 
@@ -69,6 +69,7 @@ The lack of missing values simplifies preparation, but class imbalance remains a
 
 Despite these complexities, the dataset contains rich behavioral signals—especially through the payment history features—which makes it highly suitable for credit-risk modeling once properly preprocessed.
 
-5. Conclusion
+## 5. Conclusion
+
 
 The Credit Card Default dataset underwent systematic inspection and exploratory analysis to understand its structure and modeling challenges. With no missing values and clearly defined variables, the dataset is well-prepared for further preprocessing steps such as scaling, transformation, and handling class imbalance. The analysis highlights key predictors and distribution patterns that will support effective machine learning modeling. Additional steps such as feature engineering and advanced sampling techniques can further improve predictive performance.
